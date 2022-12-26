@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Library</title>
   </head>
   <body>
-    <h1>Your Library</h1>
+    <header class="header"><h1>Your Library</h1></header>
     <div class="add-book-container">
       <input
         class="input"
@@ -14,7 +18,6 @@
         id="title"
         placeholder="Title"
         required
-        maxlength="100"
       />
       <input
         class="input"
@@ -22,7 +25,6 @@
         id="author"
         placeholder="Author"
         required
-        maxlength="100"
       />
       <input
         class="input"
@@ -30,16 +32,16 @@
         id="pages"
         placeholder="Pages"
         required
-        maxlength="100"
       />
-      <div class="read">
-        <label for="read">Complete</label>
+      <div class="complete-book">
+        <label for="complete-book">Complete</label>
         <input class="checkbox" type="checkbox" id="complete" />
       </div>
     </div>
     <div class="add-book-container">
       <button id="add-book">Add Book</button>
     </div>
+    <div class="books-grid" id="booksGrid"></div>
     <script src="script.js"></script>
   </body>
 </html>
